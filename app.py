@@ -11,8 +11,8 @@ import streamlit.components.v1 as components
 import pandas as pd
 
 # Set your Supabase project URL and API key
-supabase_url = "https://hmnsudaftcyngykefncr.supabase.co"
-supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhtbnN1ZGFmdGN5bmd5a2VmbmNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ4ODA4NTcsImV4cCI6MjAyMDQ1Njg1N30.gfxRwUGG8Lb8G4YTsAfZCa0PLv2dc4SRsyD6RZhng1M"
+supabase_url = ""
+supabase_key = ""
 
 # Connect to Supabase
 client = Client(supabase_url, supabase_key)
@@ -41,7 +41,7 @@ def main():
         width=400,
         height=200,
         drawing_mode="freedraw",
-        stroke_color="white",
+        background_color="white",
         stroke_width=2,
         display_toolbar=True
     )
